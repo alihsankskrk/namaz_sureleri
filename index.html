@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sure Oynatıcı</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+  <div class="player-container">
+  <img src="elif_arkadaslari-Photoroom.png" width="300px"> 
+
+    <h1 class="title">🌸 Kur'an Sureleri 🌸</h1>
+    <div class="buttons-container">
+      <button class="sure-button" data-audio="./sureler/fatiha-elisa.mp3">🪷 Fatiha 🪷</button>
+      <button class="sure-button" data-audio="./sureler/subhaneke-elisa.mp3">🌹 Subhaneke 🌹</button>
+      <button class="sure-button" data-audio="./sureler/ihlas-elisa.mp3">🌷 İhlas 🌷</button>
+      <button class="sure-button" data-audio="./sureler/kevser-elisa.mp3">🪻 Kevser 🪻</button>
+      <button class="sure-button" data-audio="./sureler/salli-elisa.mp3">🌼 Allahumme Salli 🌼</button>
+      <button class="sure-button" data-audio="./sureler/barik-elisa.mp3">🏵️ Allahumme Barik 🏵️</button>
+    </div>
+    <div class="controls">
+      <button id="play">Oynat</button>
+      <button id="pause">Durdur</button>
+    </div>
+    <audio id="audio-player" src=""></audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

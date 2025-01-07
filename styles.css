@@ -1,0 +1,115 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#EDDFE0
+    ;
+    
+    text-align: center;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .player-container {
+    max-width: 600px;
+    padding: 15px; 
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px; 
+    color: #8c4c88;
+  }
+  
+  .buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    justify-content: center;
+  }
+  
+  .sure-button {
+    flex: 1 1 calc(50% - 10px); 
+    max-width: 120px;
+    padding: 8px; 
+    font-size: 14px; 
+    border: none;
+    border-radius: 10px; 
+    font-weight: bold;
+    color: #fff;
+    background-color: #e6a5b5;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .sure-button:hover {
+    background-color: #d78fa2;
+    transform: scale(1.05);
+  }
+  
+  .controls {
+    margin-top: 15px;
+  }
+  
+  .controls button {
+    margin: 5px;
+    padding: 8px 12px; 
+    border: none;
+    border-radius: 10px;
+    background-color: #87c0cd;
+    color: white;
+    font-size: 14px; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .controls button:hover {
+    background-color: #6fa8b6;
+    transform: scale(1.05);
+  }
+  
+  #pause {
+    background-color: #f28c8c;
+  }
+  
+  #pause:hover {
+    background-color: #e07878;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .player-container {
+      max-width: 90%; 
+      padding: 10px; 
+    }
+  
+    .title {
+      font-size: 20px; 
+    }
+  
+    .buttons-container {
+      gap: 8px; 
+    }
+  
+    .sure-button {
+      flex: 1 1 calc(50% - 8px); 
+      max-width: 100%;
+      font-size: 12px; 
+      padding: 6px; 
+    }
+  
+    .controls button {
+      padding: 6px 10px; 
+      font-size: 12px; 
+    }
+  }
+  
